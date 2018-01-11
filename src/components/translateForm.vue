@@ -1,5 +1,5 @@
 <template>
-  <div class="row" id="traslateForm">
+  <div class="row" id="translateForm">
     <div class="col-md-6 col-md-offset-3">
     <form id="transForm" class="well form-inline" v-on:submit="formSubmit">
       <input class="form-control" type="text" v-model="textToTranslate" placeholder="Enter a word" />
@@ -131,6 +131,12 @@ export default {
   #transForm{
     border-radius: 10px;
     border: 1px #343434 solid;
+  }
+  #translateForm{
+    position: relative;
+    margin: 20px auto;
+    left: 35%;
+   
   }
 
 </style>
